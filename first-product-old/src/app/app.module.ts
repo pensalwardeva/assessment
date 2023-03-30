@@ -8,7 +8,6 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule} from '@angular/common/http';
 
 
 
@@ -17,7 +16,7 @@ import { HttpClientModule} from '@angular/common/http';
   AppComponent,
   RegisterComponent,
   HomepageComponent,
-  UserprofileComponent
+  UserprofileComponent,
 
   
  ],
@@ -26,9 +25,8 @@ import { HttpClientModule} from '@angular/common/http';
     FormsModule,
     CommonModule,
     RouterModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    HttpClientModule
+AppRoutingModule,
+ReactiveFormsModule
  ],
   providers: [],
   bootstrap: [AppComponent],

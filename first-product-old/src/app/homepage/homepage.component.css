@@ -42,7 +42,6 @@ nav{
     padding: 2px;
     text-decoration: none;
     color: #fff;
-    transform: translate(220px,10px);
 }
 pg{
     background-size: cover;
@@ -60,7 +59,6 @@ pg{
 }
 .hero h5 i{
     color: #fff;
-
 }
 .containerbb{
     text-align: center;
@@ -70,12 +68,6 @@ pg{
     align-items: center;
     justify-content: center;
     height: 10vh;
-    width: 500px;
-}
-
-.form-group{
-  float:right;
-
 }
 .block{
     text-align: center;
@@ -100,7 +92,6 @@ pg{
 .cx{
     text-align: center;
     padding: 10px;
-    float: left;
 
 }
 .para{
@@ -121,11 +112,7 @@ pg{
 .searchbox {
     width: max-content;
     height: auto;
-   
-    float:right;
 }
-  
-
 
 .sub {
     color: white;

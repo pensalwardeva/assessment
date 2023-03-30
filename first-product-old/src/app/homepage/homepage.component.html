@@ -29,32 +29,28 @@
       </div>
       <div class="pg>">
         <div class="hero">
-          <h2><i>I'm looking for..</i></h2>
+          <h5><i>I'm looking for..</i></h5>
           <div class="containerbb">
             <form>
               <div class="input-group">
-                <input type="text"  class="searchbox" placeholder="Enter a job description" style="width: 400px;
-                transform: translate(100px, 10px); height: 45px;"  ><br>
-                <button type="submit" class="btn btn-primary"
-                  style=" transform: translate(190px,6px); width:100px;">Search</button>
+                <input type="text" class="searchbox" placeholder="Enter a job description"><br>
+                <button type="submit" class="btn btn-primary">Search</button>
               </div>
             </form>
           </div>
           <div>
           </div>
           <input type="checkbox" id="Full Time" name="Full TIME">
-          <span for="Full Time">Full Time</span>
+          <label for="Full Time">Full Time</label>
           <input type="checkbox" id="Part Time" name="Part Time">
-          <span for="PartTime">PartTime/Casual/Freelance</span>
-          <span for="Select your location"></span>
-          <select input type="text" class="form" id="Location" placeholder="Select your location"
-            style="transform:translate(10px);" width="500wh;">
+          <label for="Part Time">Part Time/Casual/Freelance</label>
+          <div class="select">
+            <input class="form-control me-2" type="search" placeholder="Select Your Location" aria-label="Search">
             <option value=""></option>
-            <option value="home">Mumbai</option>
-            <option value="company">Pune</option>
-          </select>
-          <button type="button" class="btn btn-primary cx" (click)="openRegistrationModal()"
-            style="transform: translate(190px,100px);">Register</button>
+            <option value="india"></option>
+          </div><br>
+
+          <button type="button" class="btn btn-primary cx" (click)="openRegistrationModal()">Register</button>
           <div class="search"></div>
 
         </div>
@@ -83,7 +79,7 @@
   <div class="center">
     <h6 class="sub">Subscribe To Our Job Seeker Mailing List</h6><br>
     <div>
-      <input class="cx" type="search" placeholder="Enter your Email Address" aria-label="Search" style="width: 270px; transform: translate(570px, 10px);">
+      <input class="cx" type="search" placeholder="Enter your Email Address" aria-label="Search">
     </div>
   </div> <br>
 
@@ -94,7 +90,7 @@
       </span>
       <input type="text">
     </div>&nbsp;
-    <div>
+    <div >
       <p>Copyright © 2014 Two Bytes Consulting.<b>Terms & Policies.</b></p> <br>
     </div><br>
   </div>
@@ -112,7 +108,7 @@
 
 
 
-
+  
 
 
 </body>

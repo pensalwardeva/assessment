@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { UserprofileComponent } from '../userprofile/userprofile.component';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
+import { ApiService } from '../api.service';
+import { datamodel } from './model';
+
 
 @Component({
   selector: 'app-register',
@@ -9,33 +12,35 @@ import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
+  data: any;
 
-  constructor(private modalService: NgbModal, formBuilder: FormBuilder) {
-  
+  registrationForm: FormGroup | any;
+  constructor(private modalService: NgbModal, private formBuilder: FormBuilder, private api: ApiService) {
+
   }
 
-  registrationForm = new FormGroup({
-    FirstName: new FormControl('', Validators.required),
-    LastName: new FormControl ('', Validators.required),
-    Email: new FormControl('',[Validators.required,Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
-    Search: new FormControl ('', Validators.required),    
-    Country: new FormControl ('', Validators.required),
-    Address: new FormControl ('', Validators.required),
-    Age: new FormControl('', Validators.required)
-  });
+
+
 
   onSubmit() {
 
   }
 
-  originalData: any; // the original data before any changes were made
-  data: any;
+  originalData: any; // the original data before any changes were madess
   register: any;
-  formBuilder: any;
 
-  ngOnInit() {
-    // initialize originalData with the current data
-    this.originalData = { /* some data */ };
+  ngOnInit(): void {
+
+    this.registrationForm = this.formBuilder.group({
+      FirstName: new FormControl('', Validators.required),
+      LastName: new FormControl('', Validators.required),
+      Email: new FormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
+      State: new FormControl('', Validators.required),
+      Country: new FormControl('', Validators.required),
+      Address: new FormControl('', Validators.required),
+      Age: new FormControl('', Validators.required),
+      ProfileDP: new FormControl ('',Validators.required),
+    });
   }
 
   cancel() {
@@ -44,7 +49,7 @@ export class RegisterComponent {
   }
 
   ProfileDP = "";
-  age: number = 0;
+  Age: number = 0;
   interest: string = "";
   firstName: string = "";
   LastName: string = "";
@@ -56,19 +61,26 @@ export class RegisterComponent {
   address: string = "";
   value: number = 0;
 
-  onFileSelected(event: any) {
-
+  onFileSelected(photo:any) {
+    this.ProfileDP = photo.target.files[0].name;
   }
 
-  openUserprofileModal() {
+  openUserprofileModal(data: datamodel) {
     const modalRef = this.modalService.open(UserprofileComponent);
-    modalRef.componentInstance.name = 'Submit'
+    modalRef.componentInstance.name = 'Submit';
+    this.api.RegisterUser(data).subscribe(() => {
+
+    })
   }
 
-  updateTextInput(e: any) {
-    this.value = e.target.value;
+  close(){
+   this.modalService.dismissAll(UserprofileComponent);
   }
- 
+
+  valueChanged(e :any) {
+    this.Age = e.target.value;
+  }
+
 }
 
 
