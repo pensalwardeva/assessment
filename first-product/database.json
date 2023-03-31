@@ -1,0 +1,166 @@
+{
+  "posts": [
+    {
+      "FirstName": "",
+      "LastName": "",
+      "Email": "",
+      "State": "",
+      "Country": "",
+      "Address": "",
+      "Age": "",
+      "ProfileDP": "",
+      "id": 1
+    },
+    {
+      "FirstName": "",
+      "LastName": "",
+      "Email": "",
+      "State": "",
+      "Country": "",
+      "Address": "",
+      "Age": "",
+      "ProfileDP": "",
+      "id": 2
+    },
+    {
+      "FirstName": "",
+      "LastName": "",
+      "Email": "",
+      "State": "",
+      "Country": "",
+      "Address": "",
+      "Age": "",
+      "ProfileDP": "",
+      "id": 3
+    },
+    {
+      "FirstName": "Pradnya",
+      "LastName": "Pensalwar",
+      "Email": "pradnya@gmail.com",
+      "State": "Maharashtra",
+      "Country": "India",
+      "Address": "home",
+      "Age": 27,
+      "ProfileDP": "",
+      "id": 4
+    },
+    {
+      "FirstName": "Pradnya",
+      "LastName": "Pensalwar",
+      "Email": "pradnya@gmail.com",
+      "State": "Maharashtra",
+      "Country": "India",
+      "Address": "home",
+      "Age": 27,
+      "ProfileDP": "",
+      "id": 5
+    },
+    {
+      "FirstName": "Balaji",
+      "LastName": "Pensalwar",
+      "Email": "pradnya@gmail.com",
+      "State": "Maharashtra",
+      "Country": "India",
+      "Address": "home",
+      "Age": 27,
+      "ProfileDP": "",
+      "id": 6
+    },
+    {
+      "FirstName": "Pradnya",
+      "LastName": "",
+      "Email": "",
+      "State": "",
+      "Country": "",
+      "Address": "",
+      "Age": "",
+      "ProfileDP": "",
+      "id": 7
+    },
+    {
+      "FirstName": "",
+      "LastName": "",
+      "Email": "",
+      "State": "",
+      "Country": "",
+      "Address": "",
+      "Age": "",
+      "ProfileDP": "",
+      "id": 8
+    },
+    {
+      "FirstName": "h",
+      "LastName": "",
+      "Email": "",
+      "State": "",
+      "Country": "",
+      "Address": "",
+      "Age": "",
+      "ProfileDP": "",
+      "id": 9
+    },
+    {
+      "FirstName": "h",
+      "LastName": "",
+      "Email": "",
+      "State": "",
+      "Country": "",
+      "Address": "",
+      "Age": "",
+      "ProfileDP": "",
+      "id": 10
+    },
+    {
+      "FirstName": "Pradnya",
+      "LastName": "Pensalwar",
+      "Email": "pradnya@gmail.com",
+      "State": "Maharashtra",
+      "Country": "India",
+      "Address": "home",
+      "Age": 27,
+      "ProfileDP": "",
+      "id": 11
+    },
+    {
+      "FirstName": "",
+      "LastName": "",
+      "Email": "",
+      "State": "",
+      "Country": "",
+      "Address": "",
+      "Age": "",
+      "ProfileDP": "C:\\fakepath\\cognizantlogo1.png",
+      "id": 12
+    }
+  ],
+  "RegisteredData": [
+    {
+      "ProfileDP": "",
+      "age": 0,
+      "interest": "",
+      "firstName": "",
+      "LastName": "",
+      "Email": "",
+      "telno": "",
+      "State": "",
+      "Country": "",
+      "tags": "",
+      "address": "",
+      "value": ""
+    }
+  ],
+  "profile": {
+    "ProfileDP": "",
+    "age": 0,
+    "interest": "",
+    "firstName": "",
+    "LastName": "",
+    "Email": "",
+    "telno": "",
+    "State": "",
+    "Country": "",
+    "tags": "",
+    "address": "",
+    "value": ""
+  }
+}
