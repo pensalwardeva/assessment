@@ -1,0 +1,29 @@
+<div class="area">
+  <div class="topnav">
+    <a class="active" href="#home">DEMOAPP</a>
+    <div class="topnav-right">
+      <a href="#">HOME</a>
+      <a href="#">ABOUT US</a>
+      <a href="#">JOBS</a>
+      <a href="#">CLIENTS</a>
+      <a href="#">EMPLOYERS</a>
+      <a href="#">CONTACT US</a>
+    </div>
+  </div>
+  <div style="background-color: aqua;">
+    <img class="menu-icon" src="https://pngimage.net/wp-content/uploads/2018/06/white-menu-icon-png-8.png">
+    <div *ngFor = "let item of data">
+    <img class="profile-img"
+      src="{{item.ProfileDP}}">
+    </div>
+    
+    
+      <div class="text-container" *ngFor = "let item of data" style="background-color: antiquewhite;">
+      <p class="title-text">{{item.FirstName}} </p>
+      <p class="info-text">Software Developer</p>
+      <p class="desc-text" style="background-color: antiquewhite;">Hello, I am {{item.FirstName}} {{item.LastName}} and I am above {{item.Age}} years. And you can send your emails to {{item.Email}}
+        I live in the state of {{item.Country}}. I like to play different outdoor games please reach out to me using my mobile number
+       </p>
+    </div>
+  </div>
+</div>
